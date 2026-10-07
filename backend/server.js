@@ -11,7 +11,14 @@ const { errorHandler } = require('./middleware/auth');
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_URL }));
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://loyaltyhubfrontend.onrender.com'
+  ],
+  credentials: true
+}));
+
 app.use(express.json({ limit: '1mb' }));
 
 app.get('/health', (_, res) => res.json({ ok: true }));
