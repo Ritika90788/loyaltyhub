@@ -1,0 +1,1 @@
+export default () => <footer className="foot"><div className="wrap"><b>LoyaltyHub</b> — Shop More. Earn More. Get Rewarded.<br/><small>Demo platform with fictional stores. Not affiliated with any real marketplace.</small></div></footer>;
